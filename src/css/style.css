@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 100dvh;
     nav.back {
@@ -33,6 +34,11 @@ body {
                 transform: scale(1);
             }
         }
+    }
+    &.emmet {
+         background: linear-gradient(45deg, black,#7acb16);
+         background-attachment: fixed;
+         
     }
     &.HTML {
          background: linear-gradient(80deg, grey,#e44d26);
@@ -61,6 +67,34 @@ body {
         }
     } 
     main { 
+        background: linear-gradient(#0006, #0000);
+        border-radius: 0.4rem;
+        padding: 1rem;
+        section {
+            h2.subtitle {
+                color: #7acb16;
+                border-bottom: 2px dotted #7acb16;
+                padding-bottom: 0.4rem;
+                small {
+                    color: #fff;
+                    font-size:0.9rem;
+                    font-weight:400;
+                }
+            }
+            h3 {
+                color: #7acb16;
+                margin: 0;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            xmp {
+                background-color: #0009;
+                border-radius: 8px;
+                padding: 0.6rem;
+                margin: 0;
+            }
+        }
         header.mainmenu {
                 &.internal {
                     h1 {
