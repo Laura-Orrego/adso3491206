@@ -45,6 +45,7 @@
                         transition: all 5s ease;
                         margin: 0 0.5rem;
                         width: 340px;
+                        vertical-align: top;
 
                         &.character01 {
                             background: url(imgs/brucebat2.jpg) no-repeat;
@@ -95,22 +96,22 @@
                         padding: 1rem;
                         margin: 2rem auto;
                         width: 1388px;
-
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 2rem;
+                        font-size: 0;
 
                         img {
+                            display: inline-block;
+                            vertical-align: top;
                             filter: drop-shadow(0 0 8px #7b1919);
                             object-fit: contain;
                             height: 340px;
                             width: 340px;
-                            flex-shrink: 0;   
-                            margin-right: 0;
+                            margin-right: 2rem;
                         }
                         aside {
-                            flex: 1;        
-                            width: auto;
+                            display: inline-block;
+                            vertical-align: top;
+                            width: calc(100% - 340px - 2rem);
+                            font-size: 1rem;
 
                             h2 {
                                 color: #999;
@@ -157,11 +158,14 @@
                     section.main-characters {
                         article {
                             width: 718px;
-                            gap: 1rem;
 
                             img {
                                 width: 240px;
                                 height: auto;
+                                margin-right: 1rem;
+                            }
+                            aside {
+                                width: calc(100% - 240px - 1rem);
                             }
                             aside p {
                                 line-height: 1.8rem;
@@ -196,6 +200,9 @@
 
                             img {
                                 width: 200px;
+                            }
+                            aside {
+                                width: calc(100% - 200px - 1rem);
                             }
                             aside p {
                                 font-size: 1rem;
@@ -242,18 +249,18 @@
                             width: 100%;
                             margin: 1rem auto;
                             padding: 0.75rem;
-                            flex-direction: column;
-                            align-items: center;
-                            gap: 1rem;
+                            text-align: center;
 
                             img {
+                                display: block;
                                 width: 160px;
                                 height: auto;
-                                margin: 0 auto;
+                                margin: 0 auto 1rem auto;
                             }
                             aside {
+                                display: block;
                                 width: 100%;
-                                flex: none;
+                                text-align: left;
 
                                 h2 {
                                     font-size: 1.3rem;
